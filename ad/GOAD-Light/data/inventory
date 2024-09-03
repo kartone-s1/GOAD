@@ -88,6 +88,7 @@ srv02
 [no_update]
 dc01
 dc02
+srv01
 
 ; allow defender
 ; usage : security.yml
@@ -98,4 +99,9 @@ dc02
 ; disable defender
 ; usage : security.yml
 [defender_off]
+srv02
+srv01
+
+[sentinelone]
+srv01
 srv02

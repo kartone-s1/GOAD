@@ -1,0 +1,4 @@
+- name: Install SentinelOne agent
+  hosts: sentinelone
+  roles:
+    - { role: 'settings/sentinelone', tags: 'sentinelone', sentinelone_status: 'on' }

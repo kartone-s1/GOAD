@@ -1,0 +1,12 @@
+- name: Create directory
+  win_file:
+    path: C:\tmp
+    state: directory
+
+- name: Download SentinelOne agent in C:\tmp
+  win_copy:
+    src: SentinelOneInstaller_windows_64bit_v23_4_4_223.exe
+    dest: C:\tmp\SentinelOneInstaller_windows_64bit_v23_4_4_223.exe
+
+- name: Install SentinelOne agent
+  script: install_s1.ps1
