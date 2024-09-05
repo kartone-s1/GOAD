@@ -1,2 +1,2 @@
-- name: Windows | Add the it keyboard layout
+- name: Windows | Add the it-IT keyboard layout
   win_shell: $langList = Get-WinUserLanguageList; $langList.Add("{{layout}}"); Set-WinUserLanguageList -LanguageList $langList -Force
